@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8"/>
+    <title>CSS-Random-Keyframe-Generator</title>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+  <h1>Css-Random-Keyframe-Generator</h1>
+   Random number in Range: %d{y - x; Anzahl Nachkommastellen (Default: 0)}
+   <br>
+   Random value From list: %r{y;x;z;g;t; ...}
+   <br>
+   <br>
+   Beispiel: opacity: %d{0.5 - 1, 1};
+   <br>
+   <br>
+   Css-Attributes:
+   <br>
+   <input type="text" class="cssAttribute" placeholder="Css-Attribut" required/>
+   <br>
+   <input id="addCSSAttributeButton" type="button" value="+"/>
+   <br>
+   <br>
+   Anzahl an Keyframes
+   <input type="number" id="stepCountInput" min="2"  max="100" placeholder="Anzahl an Keyframes" value="50" required/>
+   <br>
+   <br>
+   <input type="button" id="generateCssButton" value="Css generieren"/>
+   <br>
+   <br>
+   Output: <br>
+   <textarea id="codeOutput" name="output" rows="20"></textarea>
+
+   <script src="uiScript.js"></script>
+   <script src="generator.js"></script>
+  </body>
+</html>

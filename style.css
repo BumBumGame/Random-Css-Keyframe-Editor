@@ -1,0 +1,13 @@
+html{
+  font-size: 1.1em;
+  font-family: Arial;
+}
+
+.cssAttribute{
+  width: 80%;
+  padding: 0.25%;
+}
+
+#codeOutput{
+  width: 80%;
+}
